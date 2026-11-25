@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Esencia Relax & Beauty Spa | Chihuahua</title>
+<meta name="description" content="Masajes, faciales, depilación láser y experiencias en pareja en Chihuahua. Agenda por WhatsApp.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf7f2;--ink:#2b241f;--soft:#7a6e64;--gold:#b08a4f;--line:#e8e0d5}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:300 17px/1.7 Jost,sans-serif}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:400;line-height:1.1}
+.w{max-width:1120px;margin:0 auto;padding:0 24px}
+.sec{padding:110px 0}
+.btn{display:inline-block;padding:15px 34px;background:var(--gold);color:#fff;font-size:15px;letter-spacing:.08em;transition:opacity .2s}
+.btn:hover{opacity:.85}
+.small{font-size:14px;letter-spacing:.2em;color:var(--gold);margin-bottom:16px;display:block}
+nav{position:absolute;top:0;left:0;right:0;z-index:5;color:#fff}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:86px}
+.logo{font:400 30px "Cormorant Garamond",serif;letter-spacing:.04em}
+nav a.r{border:1px solid rgba(255,255,255,.7);padding:10px 22px;font-size:14px;letter-spacing:.1em}
+.hero{position:relative;height:100vh;min-height:560px;color:#fff;display:flex;align-items:center;text-align:center}
+.hero img{position:absolute;inset:0}
+.hero:after{content:"";position:absolute;inset:0;background:rgba(25,15,10,.45)}
+.hero .w{position:relative;z-index:1}
+.hero h1{font-size:clamp(46px,7vw,86px);margin-bottom:18px}
+.hero p{font-size:19px;margin-bottom:34px;opacity:.92}
+.intro{text-align:center;max-width:680px}
+.intro h2{font-size:clamp(32px,4vw,44px);margin-bottom:20px}
+.intro p{color:var(--soft)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card .ph{aspect-ratio:3/4;overflow:hidden;margin-bottom:20px}
+.card .ph img{transition:transform .8s}.card:hover .ph img{transform:scale(1.05)}
+.card h3{font-size:26px;margin-bottom:6px}
+.card p{font-size:15px;color:var(--soft)}
+.head{text-align:center;margin-bottom:56px}.head h2{font-size:clamp(32px,4vw,44px)}
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:620px}
+.split .tx{display:flex;flex-direction:column;justify-content:center;padding:60px clamp(24px,7vw,100px);background:#efe7dc}
+.split h2{font-size:clamp(32px,4vw,46px);margin-bottom:18px}
+.split p{color:var(--soft);margin-bottom:30px;max-width:440px}
+.loyal{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.loyal h2{font-size:clamp(32px,4vw,44px);margin-bottom:18px}
+.loyal p{color:var(--soft);margin-bottom:22px}
+.pts{list-style:none;padding:0}.pts li{padding:14px 0;border-top:1px solid var(--line)}.pts b{font-weight:500}
+.card2{background:#fff;border:1px solid var(--line);padding:40px;text-align:center;max-width:400px;margin:0 auto;box-shadow:0 30px 60px -30px rgba(60,40,20,.25)}
+.card2 .logo{color:var(--ink);font-size:32px}
+.card2 .sub{font-size:13px;letter-spacing:.2em;color:var(--soft);margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+.st{aspect-ratio:1;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:#c9bba8;font-size:14px;transition:.3s}
+.st.on{background:var(--gold);border-color:var(--gold);color:#fff}
+.st.last{font-size:10px;line-height:1.2;color:var(--gold);border-color:var(--gold)}
+.st.last.on{color:#fff}
+.msg{font-size:14px;color:var(--soft);min-height:44px;margin-bottom:16px}
+.card2 button{width:100%;border:0;cursor:pointer;font-family:inherit}
+.note{font-size:12px;color:var(--soft);margin-top:14px;text-align:center}
+.contact{background:#2b241f;color:#e9e1d6;text-align:center}
+.contact h2{font-size:clamp(32px,4vw,46px);margin-bottom:28px}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:40px 0 48px;font-size:15px;color:#b9ab9c}
+.info b{display:block;color:#fff;font-weight:400;font-family:"Cormorant Garamond",serif;font-size:22px;margin-bottom:6px}
+footer{background:#221c18;color:#8f8275;text-align:center;font-size:13px;padding:24px}
+.wa{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:9}
+.wa svg{width:30px;height:30px}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}.split,.loyal{grid-template-columns:1fr}.split .ph{height:380px}.loyal{gap:50px}.info{grid-template-columns:1fr}.sec{padding:80px 0}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}nav a.r{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="w"><a class="logo" href="#">esencia</a><a class="r" href="https://wa.me/526146014546">RESERVAR</a></div></nav>
+
+<header class="hero">
+  <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QdQsUyobtnNPU65AGCUzSYyMdlna_5PUBAvasjGTxy-cCLwd_d9MaTD-BisHTk74toKGazkgWB_BCpntWbKS33qj3G0VAg6oyi2qthV83aU2QNAJ8dNJxk7TBpk26_ND0AVDJ8ll3viog=w1920" alt="Cabina Esencia Spa">
+  <div class="w">
+    <h1>Tu momento,<br>nuestra esencia</h1>
+    <p>Relax & Beauty Spa en Chihuahua</p>
+    <a class="btn" href="https://wa.me/526146014546">AGENDAR CITA</a>
+  </div>
+</header>
+
+<section class="sec"><div class="w intro">
+  <span class="small">DESDE HACE 9 AÑOS</span>
+  <h2>Un espacio dedicado a tu bienestar</h2>
+  <p>Tratamientos personalizados en un ambiente acogedor, con personal certificado. Porque verte bien es sentirte bien.</p>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="w">
+  <div class="head"><span class="small">SERVICIOS</span><h2>Lo que hacemos por ti</h2></div>
+  <div class="cards">
+    <div class="card"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RTWrANie3UEDdPsQgv8LeuyeWeDDYmwtvPRiRS2ABqNlhDqIcNAl5cRuuzb8R3kTUV3nKWr4peAkxQIw8ZOTU4Jsx7IutAfWLEaacOB2nbXL9APXgtxVFp79L3QsbJq5pt3XICuYtssQaC=w800" alt="Masajes"></div><h3>Masajes</h3><p>Relajante, descontracturante, piedras calientes, drenaje linfático.</p></div>
+    <div class="card"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ThTASCt_Aw4vyf4QJuuB55wCy_2WaGRY5wLeJaab72vstoabcRmly6t21LrJt2kDnomEtDJGSnE0zT6xOihR0Agu48KbgAVG9GdUY8bbt6UXdpRWHGqjOD5roDXGGtOv8xP09b0ZG6Jnyw=w800" alt="Faciales"></div><h3>Faciales</h3><p>Limpieza profunda, hidrafacial, antiedad y antimanchas.</p></div>
+    <div class="card"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8aVWeyJjVBhvu6a52CLzHaKcwBkU2G2x7uJRIxrfJV2XkQRwIYUuoSYhOlbn8869z_G-SWlFYC8tT6-7qBBcGl1UP_CVuJq3BFRADmb2yAwIuErAltE-NxXMaY6OQ6rQX3cRTVBrHGrK_=w800" alt="Depilación láser"></div><h3>Láser y corporales</h3><p>Depilación láser, presoterapia y aparatología reductiva.</p></div>
+    <div class="card"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S5hhImP2bbbIaVLGPMgI03t89fQvEmJ34JDz1PtZRCyAyRgwRvBUZITzCHM1NlvdZ3hlA5TfTWVMtNDVJeSegbFT60iP2AaPn0a2bxTs_qg_anMhUuJ3EgEuk4toidTVtTsOOBzuctzYA=w800" alt="Uñas y pedicure"></div><h3>Uñas y belleza</h3><p>Manicure, pedicure y lifting de pestañas.</p></div>
+  </div>
+</div></section>
+
+<section class="split">
+  <div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qh28fz72ORnYky8j9LVZ9mV6v3Ty6PY-Ramw_efdsQqoMlWswrm0fNhYFrFqwfi7_GVTkYYTJsAUuDd9-MdsPN7Sv2wFythV19BE0L21wayBJUF0brwQqrehN24RDDHmYec_auamo81No=w1400" alt="Experiencia en pareja"></div>
+  <div class="tx">
+    <span class="small">EN PAREJA</span>
+    <h2>Un momento solo para ustedes</h2>
+    <p>Masaje en pareja, piedras calientes y vela aromática. Ideal para aniversarios o simplemente cambiar el plan de siempre. También certificados de regalo.</p>
+    <div><a class="btn" href="https://wa.me/526146014546">RESERVAR</a></div>
+  </div>
+</section>
+
+<section class="sec"><div class="w loyal">
+  <div>
+    <span class="small">TARJETA DE SELLOS</span>
+    <h2>Cada visita tiene recompensa</h2>
+    <p>Por cada servicio recibes un sello en tu celular. Al completar tu tarjeta, tu siguiente servicio es de regalo.</p>
+    <ul class="pts">
+      <li><b>Los clientes regresan.</b> Tienen un premio esperándolos aquí, no en otro spa.</li>
+      <li><b>Vienen más seguido.</b> "Te faltan 2 sellos" los motiva a agendar pronto.</li>
+      <li><b>Se vuelven clientes fijos</b> y lo recomiendan.</li>
+    </ul>
+  </div>
+  <div>
+    <div class="card2">
+      <div class="logo">esencia</div><div class="sub">TARJETA DE SELLOS</div>
+      <div class="grid" id="g"></div>
+      <p class="msg" id="m">Toca el botón para probarla.</p>
+      <button class="btn" id="b" type="button">REGISTRAR VISITA</button>
+    </div>
+    <p class="note">Demostración. Sellos y premio de ejemplo.</p>
+  </div>
+</div></section>
+
+<section class="sec contact"><div class="w">
+  <span class="small">VISÍTANOS</span>
+  <h2>Te esperamos</h2>
+  <div class="info">
+    <div><b>Dirección</b>Av. de las Américas 2205-A<br>Panamericana, Chihuahua</div>
+    <div><b>Horario</b>Lunes a viernes 9:00 a 20:00<br>Sábado 9:00 a 15:00</div>
+    <div><b>Citas</b>WhatsApp 614 601 4546<br>Tel. 614 142 4423</div>
+  </div>
+  <a class="btn" href="https://wa.me/526146014546">AGENDAR POR WHATSAPP</a>
+</div></section>
+
+<footer>Esencia Relax & Beauty Spa · Chihuahua · <a href="https://www.instagram.com/esencia.mind/">Instagram</a> · <a href="https://www.facebook.com/esencia.mind/">Facebook</a></footer>
+
+<a class="wa" href="https://wa.me/526146014546" aria-label="WhatsApp"><svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm5.8 15.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1 2.1 3.2 5.1 4.5c1.9.8 2.6.9 3.6.7.6-.1 1.9-.8 2.1-1.5s.3-1.3.2-1.5-.3-.2-.6-.4z"/></svg></a>
+
+<script>
+var T=8,n=0,g=document.getElementById('g'),m=document.getElementById('m');
+function d(){var h='';for(var i=0;i<T;i++){var l=i==T-1;h+='<div class="st'+(l?' last':'')+(i<n?' on':'')+'">'+(i<n?'&#10003;':(l?'REGALO':i+1))+'</div>'}g.innerHTML=h}
+d();
+document.getElementById('b').onclick=function(){if(n>=T){n=0;d();m.textContent='Premio canjeado. Nueva tarjeta.';return}n++;d();var f=T-n;m.textContent=f?'Sello '+n+' de '+T+'. Te faltan '+f+' para tu regalo.':'¡Tarjeta completa! Tu siguiente servicio es de regalo.'};
+</script>
+</body>
+</html>
